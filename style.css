@@ -1,0 +1,283 @@
+/* общие классы для проектов */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* общее для текущего проекта */
+body {
+    margin: 0;
+    font-family: "TT Lakes", Arial, sans-serif;
+    color: #1B1C21;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.text {
+    color: #1B1C21;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 87px;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.main {
+    background-color: #F8F8F8;
+}
+
+.a-interaction {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+}
+
+.logo__link {
+    width: 97px;
+    height: 51px;
+    display: block;
+    border-radius: 26px;
+}
+
+.logo__link:focus,
+.a-interaction:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt #41F6D7;
+    /* box-shadow: 0 0 3pt 2pt #41F6D7; */
+}
+
+.connection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bid-header {
+    display: flex;
+    justify-content: space-around;
+    min-width: 116px;
+}
+
+.bid-header::before {
+    content: "";
+    position: relative;
+    top: 4px;
+    left: -10px;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+}
+
+.header-title__text {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.header-title__text::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-page {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.nav-page__item {
+    padding: 8px 9px 8px 16px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.nav-page__item--active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.nav-page__shadow-end {
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+/* для главной страницы */
+.burger {
+    margin-left: 16px;
+}
+
+.logo--header {
+    margin: -5px auto 0 17px;
+}
+
+
+.story-picture__picture {
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.strory-picture__text {
+    overflow: hidden;
+}
+
+.read-more {
+    padding: 16px 25px;
+}
+
+.read-more__label {
+    font-size: 16px;
+    line-height: 24px;
+    /* letter-spacing: -0.2px; */
+}
+
+.read-more__icon {
+    position: absolute;
+    margin-left: -26px;
+    margin-top: -2px;
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/story_picture/expand.svg);
+}
+
+.read-more__input:checked+.read-more__icon {
+    background-image: url(./img/story_picture/expand.svg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    transform: rotate(90deg);
+}
+
+.read-more__input:focus+.read-more__icon {
+    border: 2px solid #41F6D7;
+    border-radius: 4px;
+}
+
+/* 320(538) */
+@media (max-width: 538px) {
+
+    .connection,
+    .story-picture__title,
+    .bid-header-page {
+        display: none;
+    }
+
+    .main {
+        padding: 24px 16px 0 16px;
+    }
+    
+    .story-picture {
+        padding-top: 24px;
+    }
+    .story-picture__picture {
+        /* position: relative;
+        background-repeat: no-repeat; */
+        left: -16px;
+        min-width: 320px;
+        min-height: 230px;
+        background-image: url(./img/story_picture/CPS_320x230.jpg);
+    }
+
+    .strory-picture__text {
+        max-height: 90px;
+    }
+
+    .strory-picture__text--all {
+        height: 100%;
+    }
+}
+
+@media (min-width: 539px) and (max-width: 960px) {
+
+    .story-picture__title,
+    .bid-header-page {
+        display: none;
+    }
+    .story-picture {
+        padding-top: 32px;
+    }
+
+    .story-picture__picture {
+        background-image: url(./img/story_picture/CPS_360x260.jpg);
+    }
+
+}
+
+@media (min-width: 960px) {
+    .header-page {
+        display: flex;
+
+    }
+
+    .story-picture__picture {
+        background-image: url(./img/story_picture/CPS_531x383.jpg);
+    }
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('./fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-Regular.woff') format('woff'),
+        url('./fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'), /* спросить про локал */
+        url('./fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-Bold.woff') format('woff'),
+        url('./fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-ExtraBold.eot');
+    src: local('TT Lakes ExtraBold'), local('TTLakes-ExtraBold'),
+        url('./fonts/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-ExtraBold.woff') format('woff'),
+        url('./fonts/TTLakes-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
