@@ -309,6 +309,7 @@ body {
 }
 
 @media (min-width: 960px) {
+
     .header {
         display: none;
     }
@@ -368,6 +369,13 @@ body {
         background-image: url(./img/story_picture/CPS_531x383.jpg);
     }
 }
+
+@media (min-width: 1120px) {
+    .desktop {
+        width: 1120px;
+        margin: 0 auto;
+    }
+} 
 
 @font-face {
     font-family: 'TT Lakes';
