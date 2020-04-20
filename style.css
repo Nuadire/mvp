@@ -363,7 +363,7 @@ body {
     .story-picture__picture {
         border-radius: 8px;
         margin-top: 50px;
-        margin-left: 48px;
+        margin-left: 36px;
         min-width: 531px;
         min-height: 305px;
         background-image: url(./img/story_picture/CPS_531x383.jpg);
@@ -374,6 +374,10 @@ body {
     .desktop {
         width: 1120px;
         margin: 0 auto;
+    }
+    .header-title__text::before {
+        left: auto;        
+        margin-left: -32px;
     }
 }
 
