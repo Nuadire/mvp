@@ -41,7 +41,7 @@
             <a class="a-interaction" id="request" href="#">
                 <img src="img/header/repair.svg" alt="request" class="a-interaction__img a-interaction__img--request">
             </a>
-            <a class="a-interaction" id="check-status" href="#">
+            <a class="a-interaction a-interaction--last" id="check-status" href="#">
                 <img src="img/header/checkstatus.svg" alt="check-status"
                     class="a-interaction__img a-interaction__img--check-status">
             </a>
@@ -57,7 +57,8 @@
                     Оставить заявку
                 </label>
                 <a class="a-interaction" id="request" href="#">
-                    <img src="img/header/repair.svg" alt="request" class="a-interaction__img a-interaction__img--request">
+                    <img src="img/header/repair.svg" alt="request"
+                        class="a-interaction__img a-interaction__img--request">
                 </a>
                 <label class="label-bautton" for="check-status">
                     Статус ремонта
@@ -68,28 +69,43 @@
                 </a>
             </div>
             <nav class="nav-page">
-                <a class="nav-page__item nav-page__item--active">Ремонтируемые устройства</a>
-                <a class="nav-page__item">Дополнительные услуги</a>
-                <a class="nav-page__item">Цены на услуги</a>
-                <a class="nav-page__item">Адреса сервисных центров</a>
-                <a class="nav-page__item">Специальные цены</a>
+                <a href="#repaired-brand" class="nav-page__item nav-page__item--active">Ремонтируемые устройства</a>
+                <a href="#additional-services" class="nav-page__item">Дополнительные услуги</a>
+                <a href="#service-price" class="nav-page__item">Цены на услуги</a>
+                <a href="#servece-addresses" class="nav-page__item">Адреса сервисных центров</a>
+                <a href="#special-price" class="nav-page__item">Специальные цены</a>
                 <div class="nav-page__shadow-end"></div>
             </nav>
         </header>
         <section class="story-picture">
             <div class="story-picture__story">
                 <div class="story-picture__title">Отзывы</div>
-                <div class="story-picture__text story-picture__text--all">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</div>
-                <div class="read-more">
-                    <label class="read-more__label">
-                        <input type="checkbox" class="read-more__input visually-hidden">
-                        <span class="read-more__icon"></span>
+                <div class="story-picture__text ">
+                    <!--story-picture__text--all -->
+                    <span>
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </span>
+                    <br><br>
+                    <span>
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                        рекомендациям
+                        и, в свою очередь, советуют нас родным и близким.
+                    </span>
+                </div>
+                <div class="show-more">
+                    <label class="show-more__label">
+                        <input type="checkbox" class="show-more__input visually-hidden">
+                        <span class="show-more__icon"></span>
                         Читать далее
                     </label>
                 </div>
-                
+
             </div>
-            <div class="story-picture__picture"></div>
+            <div class="story-picture__conteiner-picture">
+                <div class="story-picture__picture"></div>
+            </div>
         </section>
     </main>
 </body>
