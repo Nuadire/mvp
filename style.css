@@ -129,6 +129,7 @@ body {
     color: #7E7E82;
     font-weight: 500;
 }
+
 .nav-page__item:focus {
     outline: none;
     border: 2px dashed #41F6D7;
@@ -196,7 +197,7 @@ body {
     transform: rotate(90deg);
 }
 
-.show-more__input:focus +.show-more__icon {
+.show-more__input:focus+.show-more__icon {
     border: 2px solid #41F6D7;
     border-radius: 4px;
     /* position: absolute;
@@ -354,16 +355,9 @@ body {
     }
 
     .story-picture {
-        /* padding-top: 32px; */
         display: flex;
         justify-content: space-between;
     }
-
-    /* .story-picture__conteiner-picture {
-        min-height: 355px;
-        width: auto;
-        padding-top: 50px;
-    } */
 
     .story-picture__picture {
         border-radius: 8px;
@@ -397,6 +391,7 @@ body {
     font-weight: 300;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'TT Lakes';
     src: url('./fonts/TTLakes-Medium.eot');
