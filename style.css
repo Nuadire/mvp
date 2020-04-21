@@ -178,7 +178,7 @@ body {
 .show-more__label {
     font-size: 16px;
     line-height: 24px;
-    /* letter-spacing: -0.2px; */
+    cursor: pointer;
 }
 
 .show-more__icon {
@@ -198,12 +198,7 @@ body {
 }
 
 .show-more__input:focus+.show-more__icon {
-    border: 2px solid #41F6D7;
-    border-radius: 4px;
-    /* position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: #41F6D7; */
+    outline: 2px solid #41F6D7;
 }
 
 /* 320(640) */
@@ -375,8 +370,9 @@ body {
         width: 1120px;
         margin: 0 auto;
     }
+
     .header-title__text::before {
-        left: auto;        
+        left: auto;
         margin-left: -32px;
     }
 }
