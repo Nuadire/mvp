@@ -36,6 +36,7 @@ body {
     color: #1B1C21;
     font-size: 14px;
     letter-spacing: 0.2px;
+    background-color: #F8F8F8;
 }
 
 .text {
@@ -76,19 +77,21 @@ body {
     /* box-shadow: 0 0 3pt 2pt #41F6D7; */
 }
 
+.header__connection {
+    margin-right: 20px;
+}
+
 .connection {
     display: flex;
     justify-content: space-between;
     width: 152px;
-    margin-right: 20px;
 }
 
-.bid-header {
+.bid-container {
     display: flex;
     justify-content: space-between;
 }
-
-.bid-header::before {
+.header__bid-container::before {
     content: "";
     position: relative;
     top: 4px;
@@ -96,6 +99,7 @@ body {
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
+
 }
 
 .header-title__text {
@@ -128,6 +132,7 @@ body {
     text-decoration: none;
     color: #7E7E82;
     font-weight: 500;
+    border: 2px solid #F8F8F8;
 }
 
 .nav-page__item:focus {
@@ -151,7 +156,7 @@ body {
 }
 
 /* для главной страницы */
-.burger {
+.header__burger {
     margin-left: 16px;
 }
 
@@ -201,6 +206,8 @@ body {
     outline: 2px solid #41F6D7;
 }
 
+/* @media (max-width: 310px) {} */
+
 /* 320(640) */
 @media (max-width: 640px) {
 
@@ -214,12 +221,16 @@ body {
         padding: 24px 16px 0 16px;
     }
 
-    .bid-header {
-        min-width: 132px;
-        padding-right: 16px;
+    .layout-positioner {
+        min-width: 310px;
     }
 
-    .logo--header {
+    .header__bid-container {
+        min-width: 132px;
+        margin-right: 16px;
+    }
+
+    .header__logo {
         margin: -5px auto 0 auto;
     }
 
@@ -234,8 +245,8 @@ body {
         min-height: 190px;
         background-image: url(./img/story_picture/CPS_320x230.jpg);
         background-position-x: -10px;
-        background-size: 100% 100%;
-        /* background-size: cover; */
+        background-size: cover;
+        padding-top: 58%;
     }
 
     .story-picture__text {
@@ -260,16 +271,16 @@ body {
         padding: 24px 24px 0 16px;
     }
 
-    .bid-header {
+    .header__bid-container {
         min-width: 140px;
-        padding-right: 24px;
+        margin-right: 24px;
     }
 
-    .logo--header {
+    .header__logo {
         margin: -5px auto 0 40px;
     }
 
-    .logo--header::before {
+    .header__logo::before {
         content: "";
         position: absolute;
         margin-left: -20px;
@@ -320,11 +331,11 @@ body {
         align-items: center;
     }
 
-    .logo--header {
+    .header__logo {
         margin: -5px auto 0 40px;
     }
 
-    .logo--header::before {
+    .header__logo::before {
         content: "";
         position: absolute;
         margin-left: -20px;
@@ -366,7 +377,7 @@ body {
 }
 
 @media (min-width: 1120px) {
-    .desktop {
+    .layout-positioner {
         width: 1120px;
         margin: 0 auto;
     }
