@@ -122,6 +122,7 @@ body {
     width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;
+    padding: 2px 0 2px 2px;
 }
 
 .nav-page__item {
@@ -132,13 +133,12 @@ body {
     text-decoration: none;
     color: #7E7E82;
     font-weight: 500;
-    border: 2px solid #F8F8F8;
 }
 
 .nav-page__item:focus {
     outline: none;
-    border: 2px dashed #41F6D7;
     border-radius: 4px;
+    box-shadow: 0 0 0 2px #41F6D7;
 }
 
 .nav-page__item--active {
