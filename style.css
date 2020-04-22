@@ -123,16 +123,18 @@ body {
     flex-wrap: nowrap;
     overflow: hidden;
     padding: 2px 0 2px 2px;
+    margin-left:-2px;
 }
 
 .nav-page__item {
-    padding: 8px 9px 8px 16px;
+    padding: 6px 9px 10px 16px;
     font-size: 16px;
     line-height: 24px;
     white-space: nowrap;
     text-decoration: none;
     color: #7E7E82;
     font-weight: 500;
+    max-height: 40px;
 }
 
 .nav-page__item:focus {
@@ -235,7 +237,7 @@ body {
     }
 
     .story-picture {
-        padding-top: 24px;
+        padding-top: 22px;
     }
 
     .story-picture__picture {
@@ -291,7 +293,7 @@ body {
     }
 
     .story-picture {
-        padding-top: 32px;
+        padding-top: 30px;
         display: flex;
         justify-content: space-between;
     }
@@ -346,7 +348,7 @@ body {
     }
 
     .header-title__text {
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     .label-bautton {
