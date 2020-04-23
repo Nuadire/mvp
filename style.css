@@ -59,8 +59,15 @@ body {
 .a-interaction {
     width: 40px;
     height: 40px;
-    display: block;
+    background-color: #FF3E79;
     border-radius: 50%;
+    display: block;
+}
+.a-interaction__img{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo__link {
