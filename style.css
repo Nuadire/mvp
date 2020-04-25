@@ -57,11 +57,11 @@ body {
 }
 
 .a-interaction {
+    display: block;
     width: 40px;
     height: 40px;
     background-color: #FF3E79;
     border-radius: 50%;
-    display: block;
 }
 .a-interaction__img{
     position: relative;
@@ -131,6 +131,7 @@ body {
     overflow: hidden;
     padding: 2px 0 2px 2px;
     margin-left:-2px;
+    background-image:linear-gradient(to right,transparent 95%,white 100%);
 }
 
 .nav-page__item {
@@ -156,13 +157,13 @@ body {
     background-color: #ffffff;
 }
 
-.nav-page__shadow-end {
+/* .nav-page__shadow-end {
     position: absolute;
     right: 0;
     width: 35px;
     height: 40px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-}
+} */
 
 /* для главной страницы */
 .header__burger {
@@ -454,3 +455,7 @@ body {
     font-weight: 800;
     font-style: normal;
 }
+
+/* :root{
+    --text-color: #1B1C21;
+} */
