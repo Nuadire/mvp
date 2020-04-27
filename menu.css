@@ -25,18 +25,36 @@
 }
 
 .main-menu {
-    height: 432px;
+    /* 768+ */
+    height: 480px;
+    /* 768- */
+    /* height: 408px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: stretch;
+    margin:0;
+    padding: 0;
+    list-style: none;
 }
 .menu-positioner__main-menu {
     margin-bottom: auto;
 }
 
-.main-menu__item,
+.main-menu__item {
+    padding: 5px 0;
+}
+/* спросить! */
+.main-menu__item {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    font-weight: 500;
+}
 .toggle-lang__item {
+    display: block;
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
@@ -44,8 +62,8 @@
     font-weight: 500;
 }
 
-.main-menu__item:focus,
-.toggle-lang__item:focus {
+.focus:focus,
+.focus:focus {
     outline: none;
     /* спросить! */
     border-radius: 4px; 
@@ -82,16 +100,20 @@
 }
 
 .togle-lang {
+    margin:0;
+    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: start;
 }
 
 .footer__togle-lang {
     margin-top: 40px;
-    /* margin-top: 8px; */
 }
 
 .toggle-lang__item {
     margin-right: 7px;
+    
 }
+
 
