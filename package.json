@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Nuadire/mvp/issues"
   },
-  "homepage": "https://github.com/Nuadire/mvp#readme"
+  "homepage": "https://github.com/Nuadire/mvp#readme",
+  "dependencies": {
+    "swiper": "^5.3.8"
+  }
 }
